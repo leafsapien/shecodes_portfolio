@@ -1,0 +1,109 @@
+/* Font import settings */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wdth,wght@104.4,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    scroll-behavior: smooth;
+}
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rubik", sans-serif;
+}
+
+body,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Page styling, background colours, font colours, custom fonts */
+
+/* Custom font in header */
+
+h1 {
+    font-family: "Kalnia Glaze", serif;
+    font-size: xx-large;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 400;
+    font-size: xxx-large;
+}
+
+:root {
+    background: #223541;
+    color: #C64191;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Setting all hyperlinks */
+a:-webkit-any-link {
+    color: #5AFF15;
+}
+
+footer {
+    color: #D36135;
+}
+
+/* images resizing and styling */
+.face, .face:hover {
+    border-radius: 50%;
+    border: 10px;
+    border-color: #50D8D7;
+    transform: scaleX(-1);
+
+}
+
+.projects_img {
+    border-radius: 50%;
+    max-width: 30%;
+    height: auto;
+}
+
+.amphibian {
+    border-radius: 8px;
+    max-width: 30%;
+    height: auto;
+}
+
