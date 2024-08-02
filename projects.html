@@ -8,47 +8,52 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
-    <ul>
-        <li>
-            <a class="current" href="index.html">Home</a>
-        </li>
-        <li>
-            <a class="Projects" href="#">Projects</a>
-        </li>
-    </ul>
-    </nav>
+    <div class="header_container">  
     <header>
-        <h1>My Projects</h1>
-    </header>
-    <main>
-        <img class="projects_img" src="img/discovering_fire.webp" alt="Cave woman sitting next to newly created campfire with a surprised and excited expression, as she has discovered how to create fire for the first time"></section>
         <ul>
-            <li>
-                <a href="https://leafsapien.github.io/odin-recipes/">I learned how to write HTML!</a>
+            <li class="header_child">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="header_child">
+                <a class="current" href="#">Projects</a>
+            </li>
+        </ul>
+    </header>
+    </div>  
+
+    <main>
+        <div class="projects_container">
+            <h1 class="projects_child">My Projects</h1>
+            <img class="projects_img" src="img/discovering_fire.webp" alt="Cave woman sitting next to newly created campfire with a surprised and excited expression, as she has discovered how to create fire for the first time"></section>
+        </div>
+        <div class="main_container">
+        <ul>
+            <li class="list_child">
+                <a href="https://leafsapien.github.io/odin-recipes/" target="_blank">I learned how to write HTML!</a>
             </li>
             <br>
-            <li>
-                <a href="https://github.com/leafsapien/landing-page/deployments/github-pages">I learned how to use Flexbox!</a> 
+            <li class="list_child">
+                <a href="https://github.com/leafsapien/landing-page/deployments/github-pages" target="_blank">I learned how to use Flexbox!</a> 
             </li>
             <br>
-            <li>
-                <a href="https://leafsapien.github.io/sunnyside_bakery/">I learned how to build a 3 page website with a table and contact form!</small></a>
+            <li class="list_child">
+                <a href="https://leafsapien.github.io/sunnyside_bakery/" target="_blank">I learned how to build a 3 page website with a table and contact form!</small></a>
             </li>
             <br>
-            <li>
-                <a href="https://leafsapien.github.io/shecodes_landing/">I learned how to make it work on both Desktop and mobile!</a>
+            <li class="list_child">
+                <a href="https://leafsapien.github.io/shecodes_landing/" target="_blank">I learned how to make it work on both Desktop and mobile!</a>
             </li>
             <br>
         </ul>
         <p class="projects_end">Watch this space to see my evolution. <br>
         <img class="amphibian" src="img/amphibian.webp" alt="In the left most image a fish splashing out of the water, the next image progressing from left to right is an amphibian gradually evolving to grow limbs and lungs and eventually leave the water as an entirely new creature">
         </p>
+        </div>
     </main>
-    <footer>   
-    <img class="logos" src="img/GitHub.png" alt="The Github logo, an octopus holding up one tentacle">
-    <img class="logos" src="img/Linkedin.png" alt="the Linkedin logo, a blue circle with the letters 'in'">
-    Copyright &copy; leafsapien 2024     
+    <footer class="footer_container">
+        <a href="https://github.com/leafsapien" target="_blank"><img src="img/GitHub.png" class="logos" alt="The Github logo, an octopus holding up one tentacle"></a>
+        <a href="https://www.linkedin.com/in/anaya-dodge-71a61b109/" target="_blank"><img src="img/Linkedin.png" class="logos" alt="the Linkedin logo, a blue circle with the letters 'in'"></a>
+        <p class="copyright">Copyright &copy; leafsapien 2024</p>
     </footer>
 </body>
 </html>

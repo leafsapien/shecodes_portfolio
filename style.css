@@ -1,5 +1,4 @@
 /* Font import settings */
-@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wdth,wght@104.4,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* CSS Reset */
@@ -64,7 +63,7 @@ h1 {
     font-weight: 500;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings: "wdth" 400;
+    font-variation-settings: "wdth" 100;
     font-size: xxx-large;
 }
 
@@ -77,9 +76,29 @@ h1 {
     font-style: normal;
 }
 
+/* General styling tweaks */
+
+main {
+    margin: 0 10px;
+}
+
+header {
+    font-size: 30px;
+}
+
+header .current {
+    font-weight: bold;
+}
+
 /*Setting all hyperlinks */
 a:-webkit-any-link {
     color: #5AFF15;
+    text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+    color: #D36135;
+    font-weight: bolder;
 }
 
 footer {
@@ -87,23 +106,111 @@ footer {
 }
 
 /* images resizing and styling */
-.face, .face:hover {
+.face {
     border-radius: 50%;
     border: 10px;
     border-color: #50D8D7;
-    transform: scaleX(-1);
-
+    padding: 50px;
 }
 
+.face:hover {
+    transform: scaleX(-1);
+}
+
+/* HELP This image disappears when I try to set max-width manually */
 .projects_img {
     border-radius: 50%;
-    max-width: 30%;
+    max-width: 40%;
     height: auto;
+    padding: 50px;
 }
 
 .amphibian {
     border-radius: 8px;
     max-width: 30%;
+    min-width: 200px;
+    height: auto;
+    padding: 50px;
+}
+
+.logos {
+    max-width: 100px;
     height: auto;
 }
+
+.logos:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    border-radius: 50%;
+}
+
+/*flexbox time */
+
+/* header - nav bar.  HELP!  I can't get it to display in row format centered in the top of the screen */
+.header_container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    flex-direction: row;
+}
+
+.header_child {
+    gap: 10px;
+    flex-direction: row;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    max-width: 800px;
+}
+
+.title_child {
+    align-content: center;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* HELP how do I get the copyright line underneath the images.  HELP the copyright is sneaking up the page! */
+.footer_container {
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.logos {
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.copyright {
+    align-content: flex-end;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Projects page - When trying to add a max-width to project_img it disappears.  Image is totally warped in mobile view */
+
+.projects_container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.projects_child {
+    align-content: center;
+    justify-content: center;
+    /*flex: 1;*/
+}
+
+.projects_img {
+    align-content: center;
+    justify-content: center;
+}
+
 
