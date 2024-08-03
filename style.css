@@ -86,6 +86,11 @@ header {
     font-size: 30px;
 }
 
+header ul {
+    display: flex;
+    gap: 10px;
+}
+
 header .current {
     font-weight: bold;
 }
@@ -99,6 +104,7 @@ a:-webkit-any-link {
 a:-webkit-any-link:hover {
     color: #D36135;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 footer {
@@ -108,9 +114,8 @@ footer {
 /* images resizing and styling */
 .face {
     border-radius: 50%;
-    border: 10px;
-    border-color: #50D8D7;
-    padding: 50px;
+    border: 10px solid #50D8D7;
+    aspect-ratio: 1/1;
 }
 
 .face:hover {
@@ -122,15 +127,13 @@ footer {
     border-radius: 50%;
     max-width: 40%;
     height: auto;
-    padding: 50px;
 }
 
 .amphibian {
     border-radius: 8px;
-    max-width: 30%;
+    max-width: 400px;
     min-width: 200px;
-    height: auto;
-    padding: 50px;
+    /* height: auto; */
 }
 
 .logos {
@@ -139,13 +142,12 @@ footer {
 }
 
 .logos:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    transform: scale(1.3);
     border-radius: 50%;
 }
 
 /*flexbox time */
 
-/* header - nav bar.  HELP!  I can't get it to display in row format centered in the top of the screen */
 .header_container {
     display: flex;
     justify-content: flex-start;
@@ -163,6 +165,8 @@ footer {
     justify-content: space-around;
     flex-wrap: nowrap;
     max-width: 800px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .title_child {
@@ -173,33 +177,40 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 2px solid #D36135;
+    padding: 20px;
+    gap: 5px;
+    text-align: center;
 }
 
-/* HELP how do I get the copyright line underneath the images.  HELP the copyright is sneaking up the page! */
 .footer_container {
     display: flex;
     align-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logos {
     justify-content: space-around;
-    align-items: center;
     padding: 5px;
 }
 
 .copyright {
-    align-content: flex-end;
-    justify-content: center;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Projects page - When trying to add a max-width to project_img it disappears.  Image is totally warped in mobile view */
+.socials {
+    display: flex;
+    justify-content: center;
+}
 
 .projects_container {
     display: flex;
     justify-content: center;
-
+    padding: 20px;
+    gap: 10px;
 }
 
 .projects_child {
@@ -213,4 +224,10 @@ footer {
     justify-content: center;
 }
 
+.amphibian {
+    align-content: center;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
