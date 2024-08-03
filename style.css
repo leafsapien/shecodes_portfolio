@@ -122,6 +122,12 @@ footer {
     transform: scaleX(-1);
 }
 
+.projects_img:hover {
+    color:#D36135;
+    background: #D36135;
+    box-shadow: 0 0 100px #D36135;
+}
+
 /* HELP This image disappears when I try to set max-width manually */
 .projects_img {
     border-radius: 50%;
