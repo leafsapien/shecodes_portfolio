@@ -131,7 +131,7 @@ footer {
 /* HELP This image disappears when I try to set max-width manually */
 .projects_img {
     border-radius: 50%;
-    max-width: 40%;
+    max-width: 200px;
     height: auto;
 }
 
@@ -168,8 +168,7 @@ footer {
 
 .title_container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    align-content: center;
     max-width: 800px;
     padding: 20px;
     gap: 20px;
