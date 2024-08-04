@@ -14,7 +14,8 @@ My Portfolio site - (https://leafsapien.github.io/shecodes_portfolio/)
 ​
 ### Technical
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
-I included 2 web pages, the main being the index and the secondary being the Projects page.  I included comments to detail each change in order to control each version pushed/committed to Git.  I deployed the website to GitHub pages using the main branch.  I implemented responsive design principles by ensuring the flexbox adapted to different sized screens.  I used semantic HTML by utilising the "alt" text for all images as well as defining the sectioning of the HTML e.g. head, header, body, main etc. in order to assist screen readers.
+
+<!-- I included 2 web pages, the main being the index and the secondary being the Projects page.  I included comments to detail each change in order to control each version pushed/committed to Git.  I deployed the website to GitHub pages using the main branch.  I implemented responsive design principles by ensuring the flexbox adapted to different sized screens.  I used semantic HTML by utilising the "alt" text for all images as well as defining the sectioning of the HTML e.g. head, header, body, main etc. in order to assist screen readers. -->
 
 - [X] At least 2 web pages.
 - [X] Version controlled with Git
@@ -24,7 +25,9 @@ I included 2 web pages, the main being the index and the secondary being the Pro
 
 ### Bonus (optional)
  Add a short paragraph describing the features below, if you included any. 
-I included a hover state for the top menu selection bar "Home/Projects" as well as different display states depending on which page you are viewing from.  I also added a hover state image change to my profile image (flips on hover) and the Projects page image (border glows on hover).
+<!-- I included a hover state for the top menu selection bar "Home/Projects" as well as different display states depending on which page you are viewing from.  I also added a hover state image change to my profile image (flips on hover) and the Projects page image (border glows on hover).
+
+Small bonus note - I also tweaked all links to external sites so that they only open in a new tab. -->
 
 - [X] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
@@ -33,10 +36,16 @@ I included a hover state for the top menu selection bar "Home/Projects" as well 
 > Please include the following:
 > - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
 
+####  Full Desktop screen views
+![Full screen index page](/img_screenshots/index-full-screen.JPG)
+![Full screen Projects page](/img_screenshots/projects-full-screen.JPG)
+
+####  Phone/Tablet screen views
+![Tablet/phone screen index page](/img_screenshots/index-phone-screen.JPG)
+![Tablet/phone screen Projects page](/img_screenshots/projects-phone-screen.JPG)
+
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
-> 
-> You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
-
-####  image_title_goes_here 
-![Put a description of your image here](./relative_path_to_file)
-
+####  img/profile_anaya.jfif
+![Profile picture flips on hover state](/img_screenshots/face-profile-hover.gif))
+####  img/discovering_fire.webp
+![Picture glow border effect on hover state](/img_screenshots/projects-img-hover.gif))
